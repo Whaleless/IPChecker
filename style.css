@@ -277,7 +277,7 @@ html, body {
 
         margin-top: 10px;
         padding-top: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
 
         width: 90%;
         min-width: auto;
@@ -295,7 +295,7 @@ html, body {
     }
 
     .ip-info-block-label {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .ip-info-block-value {
