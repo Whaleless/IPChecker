@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+            crossorigin="" defer></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+<!--    <link rel="icon" type="image/x-icon" href="/assets/TOFILLIN">-->
+
+    <title>IP Checker</title>
+</head>
+<body class="body">
+    <header class="head">
+        <h1 class="title">
+            IP Address Tracker
+        </h1>
+        <form class="search-bar">
+            <input class="search-input" id="search-input" type="text" placeholder="Search for any IP address or domain">
+            <button class="search-button" for="search-input"></button>
+        </form>
+        <div class="ip-info">
+            <div class="ip-address-block info-block">
+                <label class="ip-info-block-label">
+                    ip address
+                </label>
+                <p class="ip-info-block-value ip-address-info">
+                    ~~~
+                </p>
+            </div>
+            <div class="location-block info-block">
+                <label class="ip-info-block-label">
+                    location
+                </label>
+                <p class="ip-info-block-value location-info">
+                    ~~~
+                </p>
+            </div>
+            <div class="timezone-block info-block">
+                <label class="ip-info-block-label">
+                    timezone
+                </label>
+                <p class="ip-info-block-value timezone-info">
+                    ~~~
+                </p>
+            </div>
+            <div class="isp-block info-block">
+                <label class="ip-info-block-label">
+                    isp
+                </label>
+                <p class="ip-info-block-value isp-info">
+                    ~~~
+                </p>
+            </div>
+        </div>
+    </header>
+    <div id="map" class="map">
+
+    </div>
+
+    <div class="error-popup">
+        <div class="header-popup">
+            <p class="title-popup">something went wrong</p>
+            <button class="close-popup">&times;</button>
+        </div>
+        <div class="body-popup">
+            <p class="subtitle-popup">How to make everything works:</p>
+            <ul class="suggestion-list">
+                <li>Check your data, maybe you made a mistake</li>
+                <li>Maybe, we're out of API calls of service we're using to check IP/Domen</li>
+                <li>Pray to Frontend god, maybe it works :/</li>
+            </ul>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>
