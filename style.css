@@ -255,7 +255,6 @@ html, body {
 @media all and (max-width: 801px) {
     .search-bar {
         width: 90%;
-        margin-bottom: 10px;
     }
 
     .search-input {
@@ -276,6 +275,7 @@ html, body {
 
         position: static;
 
+        margin-top: 10px;
         padding-top: 15px;
         padding-bottom: 20px;
 
